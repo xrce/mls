@@ -82,5 +82,5 @@ try:
         for laz4 in p1080:
             print(C+" ["+W+" 1080P "+C+"]"+R+" >"+W+" ",laz4)
 except:
-    print(C+" ["+W+" 404 "+C+"]")
+    print (C+" ["+W+" 404 "+C+"]"+R+" >"+W+" Film tidak ditemukan")
 print ("")
