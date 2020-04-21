@@ -35,7 +35,7 @@ def banner_dl():
     print (W+"    ██╗     ██╗  ██╗██████╗  ██╗    "+R+"██"+C+" ║"+W)
     print (W+"    ██║     ██║ ██╔╝╚════██╗███║    "+R+"██"+C+" ║"+W+"   ", time.ctime())
     print (W+"    ██║     █████╔╝  █████╔╝╚██║    "+R+"██"+C+" ║"+W+"   ", judul)
-    print (W+"    ██║     ██╔═██╗ ██╔═══╝  ██║    "+R+"██"+C+" ║"+W+"    https://layarkaca21.vip")
+    print (W+"    ██║     ██╔═██╗ ██╔═══╝  ██║    "+R+"██"+C+" ║"+W+"    http://149.56.24.226")
     print (W+"    ███████╗██║  ██╗███████╗ ██║    "+R+"██"+C+" ║"+W)
     print (W+"    ╚══════╝╚═╝  ╚═╝╚══════╝ ╚═╝    "+R+"██"+C+" ║  ═════════════════════════════"+R)
     print ("                                    ██"+C+" ║"+W+"   https://github.com/N1ght420"+R)
@@ -47,17 +47,20 @@ banner()
 a = input(C+" Judul "+R+"> "+W)
 os.system('clear')
 payload = {"s":a}
-req = requests.get("https://dunia21.me/", params=payload).text
+req = requests.get("http://149.56.24.226/", params=payload).text
 soup = BeautifulSoup(req, "html.parser")
 linknya = soup.find_all('h2')
 link = linknya[2]
-judul = re.search(r'<a href="https://dunia21.me/(.*)/" rel="bookmark"', str(link)).group(1)
+try:
+    judul = re.search(r'<a href="http://149.56.24.226/(.*)/" rel="bookmark"', str(link)).group(1)
+except AttributeError:
+    judul = re.search(r'<a href="http://149.56.24.226/(.*)/" rel="bookmark"', str(link))
 try:
     banner_dl()
     print (C+" ["+W+" JUDUL "+C+"]"+R+" >"+W+" ",str(judul))
     print ("")
-    dload = "https://dl.layarkaca21.vip/get/" + judul
-    bpass = "https://dl.layarkaca21.vip/verifying.php"
+    dload = "http://dl.indexmovie.biz/get/" + judul
+    bpass = "http://dl.indexmovie.biz/verifying.php"
     data = {"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8",
             "Accept":"*/*",
             "X-Requested-With":"XMLHttpRequest"}
