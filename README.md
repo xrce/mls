@@ -9,12 +9,12 @@
    sudo apt install git python3 python3-pip
    pip3 install requests bs4
    ```
-   <script src="https://asciinema.org/a/332308.js" id="asciicast-332308" async data-autoplay="true"></script>
+   [![asciicast](https://asciinema.org/a/332308.png)](https://asciinema.org/a/332308)
 2. Clone this repository by typing :
    ```bash
    git clone https://github.com/N1ght420/LKx21
    ```
-   <script src="https://asciinema.org/a/332310.js" id="asciicast-332310" async data-autoplay="true"></script>
+   [![asciicast](https://asciinema.org/a/332310.png)](https://asciinema.org/a/332310)
 
 ## How to Use
 1. Open LKx21 folder by typing :
@@ -36,4 +36,5 @@
    > terminator
 
    > terminator dark fate
-   <script src="https://asciinema.org/a/332312.js" id="asciicast-332312" async data-autoplay="true"></script>
+
+   [![asciicast](https://asciinema.org/a/332312.png)](https://asciinema.org/a/332312)
