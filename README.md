@@ -1,2 +1,2 @@
 # LKx21
-LK21 bypass shorturl by N1ght.Hax0r
+LK21 search engine & bypass shorturl
