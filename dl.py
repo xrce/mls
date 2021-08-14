@@ -59,8 +59,8 @@ try:
     banner_dl()
     print (C+" ["+W+" JUDUL "+C+"]"+R+" >"+W+" ",str(judul))
     print ("")
-    dload = "http://dl.indexmovie.biz/get/" + judul
-    bpass = "http://dl.indexmovie.biz/verifying.php"
+    dload = "http://dl.sharemydrive.xyz/get/" + judul
+    bpass = "http://dl.sharemydrive.xyz/verifying.php"
     data = {"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8",
             "Accept":"*/*",
             "X-Requested-With":"XMLHttpRequest"}
