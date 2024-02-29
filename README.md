@@ -1,6 +1,6 @@
 <div align="center">
 
-# LK21.dl link scraper
+# Movie Link Scraper
 
 </div>
 
@@ -9,20 +9,47 @@
 
 ## Options
 
-| Options | Name  | Description  |
-| :-----: | ----- | ------------ |
-| -t      | Title | Movie title  |
-| -l      | Limit | Search limit |
+| Options | Name  | Description    |
+| :-----: | ----- | -------------- |
+| -s      | Site  | Site to scrape |
+| -t      | Title | Movie title    |
+| -l      | Limit | Search limit   |         |
 
-
-## Usage
+## Installation
+**PyPI :**
 ```
-python dl.py -t <title>
+pip install movielinkscraper
+```
+**Repository :**
+```
+git clone https://github.com/xrce/mls
+cd mls
+pip install .
+```
+
+## Module Usage
+```py
+from mls import *
+
+scrape = <site>
+scrape.search(<title>, <limit>)
+```
+**Example :**
+```py
+from mls import *
+
+scrape = LK21()
+scrape.search("transformers", 3)
+```
+
+## Direct Usage
+```
+python -m mls -s <site> -t <title> -l <limit>
 ```
 **Example :**
 ```
-python dl.py -t sherlock
+python -m mls -s LK21 -t sherlock
 ```
 ```
-python dl.py -t "Incantation 2022" -l 2
+python -m mls -t "Incantation 2022" -l 2
 ```
