@@ -1,5 +1,5 @@
 import argparse
-from .mls import LK21, NKP
+from .mls import LK21, NKP, REBAHIN, IMDB
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Scrape download links from any site')
@@ -13,6 +13,8 @@ if __name__ == "__main__":
     limit = None if not args.limit else args.limit
     
     match site.upper():
+        case "IMDB": scrape = IMDB()
+        case "REBAHIN": scrape = REBAHIN()
         case "NKP": scrape = NKP()
         case "LK21": scrape = LK21()
     

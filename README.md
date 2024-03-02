@@ -7,13 +7,14 @@
 > [!TIP]
 > Open issue if you found any bugs and contribute if you want to add more bugs
 
-## Options
+## Available Sites
 
-| Options | Name  | Description    |
-| :-----: | ----- | -------------- |
-| -s      | Site  | Site to scrape |
-| -t      | Title | Movie title    |
-| -l      | Limit | Search limit   |         |
+| Code        | Name                                         | Status |
+| ----------- | -------------------------------------------- | :----: |
+| **LK21**    | [LayarKaca21](https://amp.lk21official.mom/) | ✅    |
+| **NKP**     | [Nekopoi](https://nekopoi.care/)             | ✅    |
+| **REBAHIN** | [REBAHIN](http://179.43.169.211/)            | ✅    |
+| **IMDB**    | [IMDB](https://www.imdb.com/)                | ✅    |
 
 ## Installation
 **PyPI :**

@@ -1,9 +1,15 @@
 from setuptools import setup, find_packages
+from os import path
+
+with open(path.join(path.abspath(path.dirname(__file__)), 'README.md'), encoding='utf-8') as f:
+    long_d = f.read()
 
 setup(
     name='movielinkscraper',
-    version='0.1.5',
+    version='0.1.8',
     description='Simple tool for scraping movie links from any site',
+    long_description=long_d,
+    long_description_content_type="text/markdown",
     author='Your Future Boyfriend',
     author_email='n1ghtpe0ple@protonmail.com',
     url='https://github.com/xrce/mls',
