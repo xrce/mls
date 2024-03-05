@@ -6,7 +6,7 @@ with open(path.join(path.abspath(path.dirname(__file__)), 'README.md'), encoding
 
 setup(
     name='movielinkscraper',
-    version='0.1.8',
+    version='0.1.9',
     description='Simple tool for scraping movie links from any site',
     long_description=long_d,
     long_description_content_type="text/markdown",
@@ -23,4 +23,5 @@ setup(
     ],
     packages=find_packages(),
     install_requires=["requests", "argparse", "prettytable", "beautifulsoup4", "selenium"],
+    project_urls={"Source":"https://github.com/xrce/mls"}
 )
