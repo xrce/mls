@@ -23,7 +23,7 @@ class Settings:
             "IMDBPLAYER": "https://databasegdriveplayer.xyz/player.php?imdb=",
             "REBAHIN": "http://179.43.169.211/",
             "NKP": "https://nekopoi.care/search/",
-            "LK21": "https://amp.lk21official.mom/search.php",
+            "LK21": "https://tv.lk21official.mom/search.php",
             "LK21INFO": "https://tv12.nontondrama.click/",
             "LK21DL": "https://dl.lk21static.xyz/get/"
         }
